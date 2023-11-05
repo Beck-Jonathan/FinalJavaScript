@@ -1,0 +1,89 @@
+* {	
+	outline: none;
+	margin: 0px;
+	background-color: white;
+	color:black;
+	padding:0px;
+	
+
+	
+}
+body{min-width:800px;
+	
+}
+
+#tabs {
+	
+	
+	background-color: white;
+	color:blue;
+	
+	
+	
+	
+}
+#tabs{border:none;
+margin:0px}
+
+header {
+background-color: black;
+
+
+}
+header img{
+	
+}
+
+footer {
+	background-color: black;
+}
+footer img {
+
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+#testform0{
+	
+	align-items: left;
+}
+p {
+	color: black;
+}
+.errorText{
+
+	color:red;
+}
+.errorInput{
+	background-color: lightpink;
+}
+.goodText{
+color:green;
+}
+.goodInput{
+	background-color: black;
+	color:pink;
+}
+.errorBorder{
+	background-color: red;
+}
+#mainform{ padding: 0px}
+
+#left {
+	text-align: right;
+	padding: 0px
+}
+
+
+
+
+
+
+
+
+
+
+
+
