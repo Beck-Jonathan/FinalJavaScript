@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	
 	console.log("Bump....");
 	$(".derby_name").hide();
@@ -69,6 +70,29 @@ for (var ii=0; ii < elements.length; ii++) {
 		if (Skates=="no"){$("#p3r4c4").show();}
 		else {$("#p3r5c4").hide();}
 	})
+
+	var InsuranceYes = document.getElementById('InsuranceYes');
+	var InsuranceNo = document.getElementById('InsuranceNo');
+	InsuranceNo.checked=true;
+	$(document.getElementsByName("Insurance")).click(function(){
+		var Insurance= (document.querySelector('input[name="Insurance"]:checked').value);
+		if (Insurance=="yes"){$("#WFTDArow").show();}
+		else {$("#WFTDArow").hide();}
+	})
+
+	var ExperianceYes = document.getElementById('ExperianceYes');
+	var ExperianceNo = document.getElementById('ExperianceNo');
+	ExperianceNo.checked=true;
+	$(document.getElementsByName("Experiance")).click(function(){
+		var Experiance= (document.querySelector('input[name="Experiance"]:checked').value);
+		if (Experiance=="yes"){$("#fieldset").show();
+		let fieldset_parent = $(".teamFieldSet:eq(0)").clone(true);
+		$("#AddTeam").show();}
+		else {$("#fieldset").hide();
+		$("#AddTeam").hide();}
+	})
+
+
 	
 	
 	
@@ -152,6 +176,7 @@ for (var ii=0; ii < elements.length; ii++) {
 	
 	$("#tab0submit").button();
 	$("#tab0submit").click(function(){
+		
 		var ErrorClasses = document.getElementsByClassName("errorInput");
 		errors=ErrorClasses.length;
 		
@@ -161,6 +186,48 @@ for (var ii=0; ii < elements.length; ii++) {
 				active: 1
 			});
 		}
+		$("#AddTeam").button();
+		$('#StartDate').datepicker({
+			changeMonth: true,
+			changeYear: true,
+			yearRange : "-120:+0",
+			maxDate:0,
+			dateFormat : 'm-dd-yy'
+			
+			
+			
+		});
+		$('#EndDate').datepicker({
+			changeMonth: true,
+			changeYear: true,
+			yearRange : "-120:+0",
+			maxDate:0,
+			dateFormat : 'm-dd-yy'
+			
+			
+			
+		});
+		var InsuranceNo = document.getElementById('InsuranceNo');
+		InsuranceNo.checked=true;
+
+		$("#WFTDArow").hide();
+		$("#fieldset").hide();
+		$("#AddTeam").hide();
+		
+		
+		$("#AddTeam").click(function () {
+			var fieldset_parent = $(".teamFieldSet:eq(0)").clone(true);
+			//$('input.date').datepicker("destroy");
+			$(".teamFieldSet:last").after($(fieldset_parent).clone(true));
+			//$("#removeSchool").show();
+			//school_cnt++;
+			
+		});
+		//$("#removeTeam").click(function () {
+			//$(".teamFieldSet:last").remove();
+			
+		//});
+				
 		
 	});
 	

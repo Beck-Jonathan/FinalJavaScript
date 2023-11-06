@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
 <head>
 	<title>Become A Skater</title>
@@ -38,17 +39,17 @@
 			<form id="testForm0">
 				
 					<div class = "row" id = "row1">
-						<div class = "col-lg-3" id="r1c1">
+						<div class = "col-xl-3" id="r1c1">
 				<input id="FirstName" value="" type="text" class="errorInput" />
 				
 				<p>First Name</p>
 						</div>
-						<div class="col-lg-3" id="r1c2">
+						<div class="col-xl-3" id="r1c2">
 				<input id="LastName" type="text" class="errorInput" />
 				
 				<p>Last Name </p>
 						</div>
-						<div class="col-lg-3" id="r1c3">
+						<div class="col-xl-3" id="r1c3">
 
 				<input id="email" type="text" class="errorInput" />
 				
@@ -56,24 +57,22 @@
 					</div>
 					</div> <!-- end row 1-->
 					<div class = "row" id = "row2"> <!-- start row 2-->
-					<div class="col-lg-3" id="r2c1">
+					<div class="col-xl-3" id="r2c1">
 						<input id="Pronouns" input type="text" class="errorInput" />
 				
 				<p>Pronouns</p>
 				
 					</div>
 				
-					<div class="col-lg-3" id="r2c2">
-				<input id="phone" input type="text" class="errorInput"/>
-				
-				<p>Phone Number</p>
+					<div class="col-xl-3" id="r2c2">
+						<p> Do you have a derby name? <br/>
+							<input type="radio" id="derbynameyes" name="derbyName" value="yes" />
+							yes
+							<input type="radio" id="derbynameno" name="derbyName" value ="no" checked />
+							no</p>
 					</div>
 					<div class="col-lg-4" id="r2c3">
-						<p> Do you have a derby name?
-				<input type="radio" id="derbynameyes" name="derbyName" value="yes" />
-				yes
-				<input type="radio" id="derbynameno" name="derbyName" value ="no" checked />
-				no</p>
+				
 					
 
 				<input type="text" class="derby_name errorInput"></input>
@@ -102,16 +101,78 @@
 		</div> <!-- end outer container-->
 		
 		<div id="history">
-			test form 1
-	
+			
+			
 			<form id="testForm1">
-				<input type="text" required title="Enter something"/><br />
+				
+				<div class="row">
+				<div class="col-sm-4"><p>Do you have WFTDA insurance?</p></div>
+				<div class ="col-sm-1" ><input type="radio" id="InsuranceYes" name="Insurance" value="yes" />yes</div>
+				<div class ="col-sm-1" ><input type="radio" id="InsuranceNo" name="Insurance" value="no" checked/>no</div>
+				</div>
+				<div class="row" id="WFTDArow"> 
+				<div class="col-sm-5"><p>WFTDA insurance number</p></div>
+				<div class="col-sm-6"><input id="WFTDANumber" input type="text" class="errorInput1" /> 	</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4"><p>Do you have any previous Experiance?</p></div>
+					<div class ="col-sm-1" ><input type="radio" id="ExperianceYes" name="Experiance" value="yes" />yes</div>
+					<div class ="col-sm-1" ><input type="radio" id="ExperianceNo" name="Experiance" value="no" checked/>no</div>
+					</div>
+
+
+
+
+
+
+				<fieldset class="teamFieldSet" id="fieldset">
+				<div id="FirstHistorialTeam">
+				<div class ="row" id ="p3r1">
+					<div class ="col-sm-3" id="p2r1c1"><p>Team Name</p> </div>
+					<div class ="col-sm-3" id="p2r1c2"><input id="PreviousTeam1" input type="text" class="errorInput1" /> </div>
+					<div class ="col-sm-3" id="p2r1c3">League Affiliation </div>
+					<div class ="col-sm-3" id="p2r1c4"><input id="PreviousLeague1" input type="text" class="errorInput1" /> </div>
+				</div> <!-- end row 1-->
+				<div class ="row" id ="p3r4">
+					<div class ="col-sm-3" id="p2r2c1">City </div>
+					<div class ="col-sm-3" id="p2r2c2"><input id="Position" input type="text" class="errorInput1" /> </div>
+					<div class ="col-sm-3" id="p2r2c3">State </div>
+					<div class ="col-sm-3" id="p2r2c4"><input id="Position" input type="text" class="errorInput1" /> </div>
+
+				</div> <!-- end row 2-->
+
+
+
+
+				<div class ="row" id ="p3r3">
+					<div class ="col-sm-3" id="p2r3c1">Position </div>
+					<div class ="col-sm-3" id="p2r3c2"><input id="Position" input type="text" class="errorInput1" /> </div>
+					<div class ="col-sm-3" id="p2r3c3">Jersey Number </div>
+					<div class ="col-sm-3" id="p2r3c4"><input id="JerseyNumber" input type="text" class="errorInput1" /> </div>
+				</div><!-- end row 3-->
+				<div class ="row" id ="p3r4">
+					<div class ="col-sm-3" id="p2r4c1"> Start Date</div>
+					<div class ="col-sm-3" id="p2r4c2"> <input id="StartDate" input type="text" class="errorInput1" /></div>
+					<div class ="col-sm-3" id="p2r4c3"> End Date</div>
+					<div class ="col-sm-3" id="p2r4c4"> <input id="EndDate" input type="text" class="errorInput1" /></div>
+				</div> <!-- end row 4-->
+				<div class ="row" id ="p3r4">
+					<div class ="col-sm-3" id="p2r5c1">m </div>
+					<div class ="col-sm-3" id="p2r5c2">n </div>
+					<div class ="col-sm-3" id="p2r5c3">o </div>
+					<div class ="col-sm-3" id="p2r5c4">p </div>
+
+				</div> <!-- nd row 4-->
+			
+			</div> <!-- end first historical team-->
+		</fieldset>
+				<input type="button" value="AddTeam" id="AddTeam" />
 				<input type="button" value="Submit" id="tab1submit" />
 			</form>			
 		
 		</div>
 		<div id="gear">
-			test form 2
+			
 	
 			<form id="testForm2">
 				<div class="row" id="p2r1">
@@ -198,10 +259,11 @@
 			</form>			
 		
 		</div>
-		<div id="other">
-			test form 3
+		<div id="practice">
+			
 			
 			<form id="testForm3">
+				test form 3
 				
 				<input type="button" value="Submit" id="tab3submit" />
 			</form>			
