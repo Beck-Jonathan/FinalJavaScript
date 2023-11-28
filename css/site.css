@@ -1,16 +1,38 @@
 * {	
 	outline: none;
-	margin: 0px;
+	margin: 0px ;
 	background-color: white;
 	color:black;
 	padding:0px;
+	font-family: 'Lato', Verdana, Geneva, sans-serif;
+	font-size: 14px;
+  line-height: 20px;
+}
 	
 
 	
-}
+
 
 
 a {color:black !important; }
+
+#topleftblack, #bottomleftblack, #toprightblack, #bottomrightblack,#footerimage,#headerimage{
+
+	background-color: black;
+}
+
+.button-icon {
+	
+	color:green;
+	left: .5rem;
+	top: .9rem;
+	display: "inline-flex"
+	/* Keep icon in center of input, regardless of the input height */
+  }
+
+
+
+
 
 #tabs {
 	
@@ -30,20 +52,13 @@ background-color: black;
 
 
 }
-header img{
+#address p{font-size :10pt
 	
 }
 
 footer {
 	background-color: black;
 }
-footer img {
-
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-
 
 #testform0{
 	
@@ -75,6 +90,14 @@ color:green;
 	text-align: right;
 	padding: 0px
 }
+.text-left{
+	text-align: center;
+	
+}
+
+.ui-button {
+    text-indent: 5px;
+}​
 
 @media screen and (max-width: 900px){ html,body {min-width:900px} }
 

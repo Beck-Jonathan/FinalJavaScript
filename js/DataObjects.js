@@ -1,4 +1,72 @@
 
+var leagues = [
+  
+  {
+    "name": "Select A League",
+    "code": "NA"
+  },
+  {
+    "name": "Women's Flat Track Derby Association",
+    "code": "WFTDA"
+  },
+  {
+    "name": "Junior Roller Derby Association ",
+    "code": "JR"
+  },
+  {
+    "name": "Men's Roller Derby Association ",
+    "code": "MRDA"
+  },
+  {
+    "name": "Modern Athletic Derby Endeavor",
+    "code": "MADE"
+  },
+  {
+    "name": "Old School Derby Association",
+    "code": "OSDA"
+  },
+  {
+    "name": "Renegade Rollergirls",
+    "code": "RR"
+  },
+  {
+    "name": "Roller Derby Coalition of Leagues ",
+    "code": "RCDoL"
+  },
+  {
+    "name": "USA Roller Sports ",
+    "code": "USA"
+  },
+  {
+    "name": "World Organization of Roller Derby",
+    "code": "World"
+  },
+  {
+    "name": "Skate Australia ",
+    "code": "AUS"
+  },
+  {
+    "name": "Roller Sports Canada ",
+    "code": "CAN"
+  },
+  {
+    "name": "Norges Skøyteforbund  ",
+    "code": "NOR"
+  },
+  {
+    "name": "Svenska Skridskoförbundet ",
+    "code": "SWE"
+  },
+  {
+    "name": "British Roller Sports Federation  ",
+    "code": "BRSF"
+  },
+  {
+    "name": "<Not Listed> ",
+    "code": "NL"
+  }]
+
+  
 var states = [
   
   {
@@ -206,3 +274,69 @@ var states = [
     "code": "WY"
   }
 ]
+
+var position = [
+  {
+      "name": "Select A Position",
+      "code": "NA"
+    },
+
+  {
+    "name": "Jammer",
+    "code": "JM"
+  },
+  {
+    "name": "Jammer/Blocker",
+    "code": "JB"
+  },
+  {
+    "name": "Blocker",
+    "code": "Bl"
+  },
+  {
+      "name": "Pivot",
+      "code": "Pi"
+    },
+    {
+      "name": "Coach",
+      "code": "Bl"
+    }
+    ,  {
+      "name": "Skating Official",
+      "code": "SO"
+    },
+    {
+      "name": "Non-Skating Official",
+      "code": "NSO"
+    }
+]
+
+
+var GearSize = [
+  {
+      "name": "<Select A Size>",
+      "code": "NA"
+    },
+
+  {
+    "name": "Extra-Large",
+    "code": "XL"
+  },
+  {
+    "name": "Large",
+    "code": "L"
+  },
+  {
+      "name": "Medium",
+      "code": "M"
+    },
+    {
+      "name": "Small",
+      "code": "S"
+    }
+    ,  {
+      "name": "Extra-Small",
+      "code": "XS"
+    }]
+
+    
